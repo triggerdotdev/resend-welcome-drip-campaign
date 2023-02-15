@@ -22,6 +22,11 @@ Then you can run the email preview server and visit [http://localhost:3000](http
 npm run emails
 ```
 
+You can now edit the emails:
+
+- [welcomeEmail.tsx](src/emails/welcomeEmail.tsx)
+- [tipsEmail.tsx](src/emails/tipsEmail.tsx)
+
 ### From, Reply To, and Subject lines
 
 You can customize the `from` and `replyTo` options by setting the `FROM_EMAIL` and `REPLY_TO_EMAIL` environment variables:
