@@ -22,6 +22,27 @@ Then you can run the email preview server and visit [http://localhost:3000](http
 npm run emails
 ```
 
+### From, Reply To, and Subject lines
+
+You can customize the `from` and `replyTo` options by setting the `FROM_EMAIL` and `REPLY_TO_EMAIL` environment variables:
+
+```
+FROM_EMAIL="Trigger.dev <eric@email.trigger.dev>"
+REPLY_TO_EMAIL="Eric <eric@trigger.dev>"
+```
+
+To customize the subject lines, edit the [index.tsx](src/index.tsx) file.
+
+### Customize the drippiness
+
+You can customize the delays between emails by editing the `ctx.waitFor` call:
+
+```ts
+await ctx.waitFor("⏲", { hours: 1 });
+```
+
+You can also make your drip campaigns smarter by connecting to your own database and conditionally sending different emails depending on what the user does. To see an example of that check out our [resend example](https://github.com/triggerdotdev/trigger.dev-examples/blob/main/src/examples/resend.tsx).
+
 ## 🚀 Deploy
 
 We've made it really easy to deploy this repo to Render.com, if you don't already have a Node.js server to host your triggers.
