@@ -88,7 +88,7 @@ You should see a message like the following:
 
 ## 🧪 Test it
 
-After successfully running this template locally, after heading over to your [Trigger.dev Dashboard](https://app.trigger.dev) you should see your newly created workflow:
+After successfully running this template locally, head over to your [Trigger.dev Dashboard](https://app.trigger.dev) and you should see your newly created workflow:
 
 ![workflow list](https://imagedelivery.net/3TbraffuDZ4aEf8KWOmI_w/c84a7d7c-8cf4-48e9-475d-9bcb30f3c300/width=1000)
 
