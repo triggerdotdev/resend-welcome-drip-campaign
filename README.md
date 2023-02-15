@@ -58,6 +58,8 @@ We've made it really easy to deploy this repo to Render.com, if you don't alread
   <img width="144px" src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
 </a>
 
+> **Note** Make sure you use your "live" trigger.dev API Key when deploying to a server
+
 ## 💻 Run locally
 
 First, clone the repo and install dependencies:
@@ -109,3 +111,7 @@ After click "Run Test" you'll be redirected to the Run Details page and you shou
 After hitting "Save" the Run will pickup where it left off and make the request to Resend.com to send your email. You can even see a preview of the email right inside the step:
 
 ![preview](https://imagedelivery.net/3TbraffuDZ4aEf8KWOmI_w/e5cc5b2a-cf4b-476b-73c4-217cf98ffc00/width=1000)
+
+## 📺 Go Live
+
+After you are happy with your campaign and deploy it live to Render.com (or some other hosting service), you can send custom events that Trigger your workflow using the [sendEvent](https://docs.trigger.dev/reference/send-event) function from the `@trigger.dev/sdk`, or simply by making requests to our [`events`](https://docs.trigger.dev/api-reference/events/sendEvent) API endpoint.
