@@ -9,7 +9,7 @@ const FROM_EMAIL =
 const REPLY_TO_EMAIL = process.env.REPLY_TO_EMAIL ?? "Hi <hello@trigger.dev>";
 
 new Trigger({
-  id: "welcome-drip-campaign",
+  id: "resend-welcome-drip-campaign",
   name: "Resend.com: Welcome Drip Campaign",
   on: customEvent({
     name: "new.user",
