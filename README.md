@@ -43,19 +43,23 @@ new Trigger({
 }).listen();
 ```
 
-## ✍️ Customize
+## 🔧 Install
 
-We've included two example emails that you should customize to your needs. You can use the react.email preview server locally to preview the emails and live edit them.
-
-First clone the repo and install the dependencies:
+You can easily create a new project interactively based on this template by running:
 
 ```sh
-git clone https://github.com/triggerdotdev/resend-welcome-drip-campaign.git
-cd resend-welcome-drip-campaign
-npm install
+npm create trigger@latest resend-welcome-drip-campaign
+# or
+yarn create trigger resend-welcome-drip-campaign
+# or
+pnpm create trigger@latest resend-welcome-drip-campaign
 ```
 
-Then you can run the email preview server and visit [http://localhost:3000](http://localhost:3000):
+Follow the instructions in the CLI to get up and running locally in <30s.
+
+## ✍️ Customize
+
+After following the install instructions above, you can run the email preview server and visit [http://localhost:3000](http://localhost:3000):
 
 ```sh
 npm run emails
@@ -87,34 +91,6 @@ await ctx.waitFor("⏲", { hours: 1 });
 
 You can also make your drip campaigns smarter by connecting to your own database and conditionally sending different emails depending on what the user does. To see an example of that check out our [resend example](https://github.com/triggerdotdev/trigger.dev-examples/blob/main/src/examples/resend.tsx).
 
-## 💻 Run locally
-
-First, in your terminal of choice, clone the repo and install dependencies:
-
-```sh
-git clone https://github.com/triggerdotdev/resend-welcome-drip-campaign.git
-cd resend-welcome-drip-campaign
-npm install
-```
-
-Then execute the following command to create a `.env` file with your development Trigger.dev API Key:
-
-```sh
-echo "TRIGGER_API_KEY=<APIKEY>" >> .env
-```
-
-And finally you are ready to run the process:
-
-```sh
-npm run dev
-```
-
-You should see a message output in your terminal like the following:
-
-```
-[trigger.dev]  ✨ Connected and listening for events [resend-welcome-drip-campaign]
-```
-
 ## 🧪 Test it
 
 After successfully running this template locally, head over to your [Trigger.dev Dashboard](https://app.trigger.dev) and you should see your newly created workflow:
@@ -138,18 +114,6 @@ After click "Run Test" you'll be redirected to the Run Details page and you shou
 After hitting "Save" the Run will pickup where it left off and make the request to Resend.com to send your email. You can even see a preview of the email right inside the step:
 
 ![preview](https://imagedelivery.net/3TbraffuDZ4aEf8KWOmI_w/e5cc5b2a-cf4b-476b-73c4-217cf98ffc00/width=1200)
-
-## 🚀 Deploy
-
-We've made it really easy to deploy this repo to Render.com, if you don't already have a Node.js server to host your triggers.
-
-[Render.com](https://render.com) is a super-fast way to deploy webapps and servers (think of it like a modern Heroku)
-
-<a href="https://render.com/deploy?repo=https://github.com/triggerdotdev/resend-welcome-drip-campaign">
-  <img width="144px" src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
-</a>
-
-> **Note** Make sure you use your "live" trigger.dev API Key when deploying to a server
 
 ## 📺 Go Live
 
