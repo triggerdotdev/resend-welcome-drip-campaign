@@ -48,7 +48,7 @@ new Trigger({
 You can easily create a new project interactively based on this template by running:
 
 ```sh
-npm create trigger@latest resend-welcome-drip-campaign
+npx create-trigger@latest resend-welcome-drip-campaign
 # or
 yarn create trigger resend-welcome-drip-campaign
 # or
