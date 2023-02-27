@@ -8,7 +8,7 @@
     "clean": "rimraf dist",
     "build": "npm run clean && npm run build:tsc",
     "build:tsc": "tsc",
-    "dev": "tsx --require ./node_modules/dotenv/config src/index.tsx",
+    "dev": "tsx watch --require ./node_modules/dotenv/config src/index.tsx",
     "emails": "email dev -d ./src/emails",
     "start": "node dist/index.js"
   },
@@ -22,8 +22,8 @@
     "@react-email/preview": "^0.0.5",
     "@react-email/section": "^0.0.8",
     "@react-email/text": "^0.0.4",
-    "@trigger.dev/resend": "^0.1.21",
-    "@trigger.dev/sdk": "^0.2.14",
+    "@trigger.dev/resend": "^0.1.24",
+    "@trigger.dev/sdk": "^0.2.17",
     "react": "^18.2.0",
     "zod": "^3.20.2"
   },
