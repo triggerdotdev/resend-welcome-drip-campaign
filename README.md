@@ -2,7 +2,7 @@
 
 This repo contains a [customEvent](https://docs.trigger.dev/triggers/custom-events) Trigger that will send an example drip email campaign using [Resend.com](https://resend.com/) and [react.email](https://react.email/)
 
-> Resend.com is currently in private beta, but if you signup for their waitlist, give us a shout on [our Discord](https://discord.gg/CzBqJnYq9r) and we'll help you get in.
+> Sign up to Resend using our [special queue jump link](https://resend.com/secret?ref=trigger) ✨
 
 ```ts
 new Trigger({
@@ -107,7 +107,7 @@ Click on the "Test your workflow" button and fill in the JSON needed for [this w
 
 After click "Run Test" you'll be redirected to the Run Details page and you should see a prompt for entering your Resend.com API Key:
 
-> Resend.com is currently in private beta, but if you signup for their waitlist, give us a shout on [our Discord](https://discord.gg/CzBqJnYq9r) and we'll help you get in.
+> If you don't have a Resend account, you can sign up using our [special queue jump link](https://resend.com/secret?ref=trigger). Once signed up, go to [Domains](https://resend.com/domains), add your own domain, and verify the DNS records.
 
 ![api key](https://imagedelivery.net/3TbraffuDZ4aEf8KWOmI_w/c4914a82-32b0-4edc-f046-124213c3df00/width=1200)
 
