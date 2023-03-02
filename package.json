@@ -22,8 +22,8 @@
     "@react-email/preview": "^0.0.5",
     "@react-email/section": "^0.0.8",
     "@react-email/text": "^0.0.4",
-    "@trigger.dev/resend": "^0.1.26",
-    "@trigger.dev/sdk": "^0.2.19",
+    "@trigger.dev/resend": "^0.1.27",
+    "@trigger.dev/sdk": "^0.2.20",
     "react": "^18.2.0",
     "zod": "^3.20.2"
   },
