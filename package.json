@@ -40,5 +40,8 @@
   },
   "engines": {
     "node": ">=16.0.0 <19.0.0"
+  },
+  "triggerdotdev": {
+    "template": "resend-welcome-drip-campaign"
   }
 }
