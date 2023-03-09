@@ -10,13 +10,13 @@ export default function WelcomeEmail({ name }: { name?: string }) {
   return (
     <Html>
       <Head />
-      <Preview>Welcome to Acme.dev, thanks for giving us a try!</Preview>
+      <Preview>Welcome to Acme, thanks for giving us a try!</Preview>
       <Section style={main}>
         <Text style={paragraph}>Hey {name ?? "there"},</Text>
         <Text style={paragraph}>
           I’m Sam, CEO of{" "}
-          <Link style={anchor} href="https://acme.dev/">
-            Acme.dev
+          <Link style={anchor} href="https://acme.test/">
+            Acme
           </Link>
           .
         </Text>
@@ -29,7 +29,7 @@ export default function WelcomeEmail({ name }: { name?: string }) {
 
         <Text style={bullets}>
           • Our{" "}
-          <Link style={anchor} href="https://docs.acme.dev/getting-started">
+          <Link style={anchor} href="https://docs.acme.test/getting-started">
             quickstart guide
           </Link>{" "}
           to get you up and running in minutes
@@ -37,7 +37,7 @@ export default function WelcomeEmail({ name }: { name?: string }) {
 
         <Text style={bullets}>
           • Explore our{" "}
-          <Link style={anchor} href="https://docs.acme.dev/">
+          <Link style={anchor} href="https://docs.acme.test/">
             docs
           </Link>{" "}
           for a full overview of the product and it’s features{" "}
@@ -49,7 +49,7 @@ export default function WelcomeEmail({ name }: { name?: string }) {
 
         <Text style={bullets}>Best,</Text>
         <Text style={bullets}>Sam</Text>
-        <Text style={paragraph}>CEO, Acme.dev</Text>
+        <Text style={paragraph}>CEO, Acme</Text>
       </Section>
     </Html>
   );

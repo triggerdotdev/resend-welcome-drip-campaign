@@ -7,7 +7,7 @@ import { paragraph, bullets, main } from "./styles";
 export default function TipsEmail({ name }: { name: string }) {
   return (
     <Html>
-      <Preview>3 tips to get the most out of Acme.dev</Preview>
+      <Preview>3 tips to get the most out of Acme</Preview>
       <Section style={main}>
         <Text style={paragraph}>Hi {name ?? "there"},</Text>
         <Text style={paragraph}>
@@ -34,12 +34,12 @@ export default function TipsEmail({ name }: { name: string }) {
           our platform.
         </Text>
         <Text style={paragraph}>
-          Thank you for choosing acme.dev. We look forward to helping you take
-          your development to the next level.
+          Thank you for choosing acme. We look forward to helping you take your
+          development to the next level.
         </Text>
         <Text style={paragraph}>Best regards,</Text>
         <Text style={paragraph}>Sam</Text>
-        <Text style={paragraph}>CEO, Acme.dev</Text>
+        <Text style={paragraph}>CEO, Acme</Text>
       </Section>
     </Html>
   );
