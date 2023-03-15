@@ -5,12 +5,9 @@
   "main": "dist/index.js",
   "private": true,
   "scripts": {
-    "clean": "rimraf dist",
-    "build": "npm run clean && npm run build:tsc",
-    "build:tsc": "tsc",
     "dev": "tsx watch --require ./node_modules/dotenv/config src/index.tsx",
-    "emails": "email dev -d ./src/emails",
-    "start": "node dist/index.js"
+    "start": "tsx src/index.tsx",
+    "emails": "email dev -d ./src/emails"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +20,7 @@
     "@react-email/section": "^0.0.8",
     "@react-email/text": "^0.0.4",
     "@trigger.dev/resend": "^0.1.27",
-    "@trigger.dev/sdk": "^0.2.21",
+    "@trigger.dev/sdk": "^0.2.22",
     "react": "^18.2.0",
     "zod": "^3.20.2"
   },
@@ -33,8 +30,6 @@
     "@types/react": "^18.0.28",
     "dotenv": "^16.0.3",
     "react-email": "^1.7.13",
-    "rimraf": "^3.0.2",
-    "tsup": "^6.5.0",
     "tsx": "^3.12.2",
     "typescript": "^4.9.4"
   },
